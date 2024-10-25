@@ -23,13 +23,8 @@ const OrderSuccess = () => {
       <h2 className="text-3xl font-bold text-green-600">
         Order Placed Successfully!
       </h2>
-      <p className="mt-4 text-lg font-medium">
-        Thank you for your order, {firstName}!
-      </p>
-      <p className="mt-2">Your food will be delivered to:</p>
-      <p className="mt-1 font-medium text-gray-800">
-        {address} - {city}
-      </p>
+      <p className="mt-4 text-lg font-medium">Thank you for your order</p>
+      <p className="mt-2">Your Order will be delivered to your address</p>
       <p className="mt-2">
         Expect your order to arrive in approximately 45 minutes.
       </p>

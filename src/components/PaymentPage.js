@@ -23,8 +23,7 @@ const PaymentPage = () => {
 
     // Simulate payment processing (replace this with actual payment logic)
     setTimeout(() => {
-      setLoading(false); // Reset loading state after processing
-      console.log("Payment submitted:", formData);
+      setLoading(false);
       // Redirect to the success page
       window.location.href = "/order-success"; // Replace with <Link> if needed
     }, 2000); // Simulate a 2-second processing time
@@ -163,7 +162,7 @@ const PaymentPage = () => {
         <div className="mt-8">
           <h3 className="text-lg font-semibold mb-4">Order Summary</h3>
           <div className="flex justify-between">
-            <span>Product Name</span>
+            <span>Product Price</span>
             <span> ₹400.00</span>
           </div>
           <div className="flex justify-between my-2">
