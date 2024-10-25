@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaCcVisa, FaCcMastercard, FaCcDiscover } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const PaymentPage = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +11,8 @@ const PaymentPage = () => {
   });
 
   const [loading, setLoading] = useState(false); // State for loader
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,7 +27,7 @@ const PaymentPage = () => {
     setTimeout(() => {
       setLoading(false);
       // Redirect to the success page
-      window.location.href = "/order-success"; // Replace with <Link> if needed
+      navigate("/order-success");
     }, 2000); // Simulate a 2-second processing time
   };
 
